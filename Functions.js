@@ -151,25 +151,36 @@ console.log(
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-const string = "The quick brown fox jumps over the lazy dog.";
-const splitCapString = string.split(" ");
+const upperFirst = function (a) {
+  const splitString = a.split(" ");
+  let capString = "";
+  for (let i = 0; i < splitString.length; i++) {
+    let capitalizedWord = "";
+    const word = splitString[i];
+    capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1) + " ";
+    capString += capitalizedWord;
+  }
+  console.log(capString);
+};
+const string = "i want all words to start with a capitalized letter";
+upperFirst(string);
 
-let capString = "";
-
-for (let i = 0; i < splitCapString.length; i++) {
-  let capitalizedWord = "";
-  const word = splitStrArr[i];
-
-  capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1) + " ";
-  sentence += capitalizedWord;
-  console.log(capitalizedWord);
-}
+console.log(
+  "\n--------------------------------Ex9---------------------------------"
+);
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const string2 = "This string starts with T and ends with H";
+let splitString2 = string2.split("");
+console.log(splitString2);
+for (let i = 0; i < splitString2.length; i++) {
+------------------------------------------------------------------------------------
+;
+  console.log(firstAndLast);
+}
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
